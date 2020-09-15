@@ -1,0 +1,50 @@
+.add-button {
+    flex: 0.5 1 1;
+
+    font-size: 3rem;
+
+    color: #ffffff;
+    cursor: pointer;
+
+    @media only screen and (max-width: 650px) {
+        font-size: 2rem
+    }
+
+    @media only screen and (max-width: 450px) {
+        font-size: 1.7rem;
+        flex: 5vw;
+        margin-bottom: 1rem;
+    }
+}
+
+.done-button {
+    margin-left: 5px;
+    color: rgb(10, 255, 1);
+    font-size: 1.5rem;
+
+    &:hover {
+        transform: translateY(0.2rem);
+        cursor: pointer;
+    }
+}
+
+.return-button {
+    color: rgb(255, 196, 0);
+    font-size: 1.5rem;
+
+    &:hover {
+        transform: translateY(0.2rem);
+        cursor: pointer;
+    }
+}
+
+.remove-button {
+    color: red;
+    font-size: 1.5rem;
+
+    &:hover {
+        transform: translateY(0.2rem);
+        cursor: pointer;
+    }
+
+}

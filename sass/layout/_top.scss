@@ -1,0 +1,126 @@
+.top {
+    flex: 1;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;   
+    flex-direction: column;      
+    width: 100%;
+}
+
+
+.header {
+    text-align: center;
+    flex: 1;
+    margin-bottom: 0;
+
+    &-h1 {
+        font-size: 5rem;
+        font-family: 'Bangers', cursive;
+        letter-spacing: 0.8rem;
+        margin-bottom: 1rem;
+
+        @media only screen and (max-width: 650px) {
+            font-size: 3rem;
+        }
+
+        @media only screen and (max-width: 450px) {
+            font-size: 2.5rem;
+        }
+
+    }
+
+    &-span, &-span-time {
+        margin-bottom: 0;
+        font-size: 1.8rem;
+        @media only screen and (max-width: 650px) {
+            font-size: 1.08rem;
+        }
+    }
+
+    
+}
+
+.operator {
+    flex: 1;
+    height: 127.39px;
+    flex-wrap: wrap;
+    align-items: center;
+    display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;   /* TWEENER - IE 10 */
+    display: -webkit-flex;  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;          /* NEW, Spec - Firefox, Chrome, Opera */
+    //justify-content: space-evenly;
+    margin-top: 0;
+    &-hour {
+        flex: 1;
+        font-size: 4rem;
+        font-family: 'Lato', sans-serif;
+        //margin-bottom: 10px; 
+        margin-top: 0;  
+
+        @media only screen and (max-width: 650px) {
+            font-size: 2.4rem
+        }
+
+        @media only screen and (max-width: 450px) {
+            font-size: 1.05rem;
+            flex: 100%;
+            margin-bottom: 0.5rem;  
+            justify-content: center;
+            line-height: 2rem;
+            //display: none;
+        }
+    }
+
+    &-input {
+        flex: 5;
+        height: 3rem;
+        border-radius: 200rem;
+        text-align: center;
+        //margin-bottom: 10px;
+        margin-left: 1rem;
+
+        @media only screen and (max-width: 650px) {
+            height: 1.8rem;
+            font-size: 0.8rem;
+        }
+
+        @media only screen and (max-width: 450px) {    
+            flex: 70vw;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &-aside {
+        flex: 1;
+        font-size: 2rem;
+        margin-right: 5px;
+        
+        &-var {
+             font-size: 2rem;
+         }
+
+        @media only screen and (max-width: 650px) {
+            font-size: 1.8rem
+        }
+
+        @media only screen and (max-width: 450px) {
+            font-size: 1.4rem;
+            flex: 100vh;
+                &-var {
+                    font-size: 1.4rem;
+                }
+            
+           
+        }
+    }
+}
+
+.line {
+    height: 1rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    background-color: #f1f2f6;
+    clip-path: polygon(25% 0, 95% 0, 75% 100%, 5% 100%);
+}

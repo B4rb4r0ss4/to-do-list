@@ -1,0 +1,67 @@
+.to-do-list-section, .done-section {
+    flex: 1;
+    flex-wrap: wrap;
+    background-color: #8425aa49;
+    padding-bottom: 2rem;
+
+    &-header, .done-section-header {
+        font-size: 2rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+
+        @media only screen and (max-width: 650px) {
+            font-size: 1.5rem;
+        }
+    }
+
+    ul {
+        list-style: none;
+    }
+    
+    .li {
+        background-color: rgba(255, 255, 255, 0.603);
+        width: 40vw;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 2000rem;
+        color: black;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        animation: moveInRight 1s ease-out;
+
+        @media only screen and (max-width: 650px) {
+            width: 80vw;
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            font-size: 1.2rem;     
+        }
+    }
+
+    @media only screen and (max-width: 650px) {
+        flex:100vw;
+        margin-bottom: 1rem;
+       
+    }
+}
+
+.done-section-header {
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.how-many-to-do, .how-many-done {
+    font-size: 2rem;
+    font-weight: 800;
+
+    @media only screen and (max-width: 650px) {
+        font-size: 1.5rem;
+    }
+}
